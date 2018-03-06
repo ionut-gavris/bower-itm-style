@@ -1,0 +1,188 @@
+﻿/*
+Web:		http://www.itmaniax.com
+*/
+/******************************************************************************/
+/******************************************************************************/
+/*******************			ITM - DISPLAY				*******************/
+/******************************************************************************/
+.itm-none {
+    display:none;
+}
+.itm-block {
+    display:block;
+}
+.itm-inline-block {
+    display:inline-block;
+}
+.itm-table {
+    display: table;
+    width: 100%;
+}
+.itm-table-row {
+    display: table-row;
+}
+.itm-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+    float: none;
+}
+/******************************************************************************/
+/*******************			ITM - SKEW					*******************/ 
+/******************************************************************************/
+.itm-skew-vertical:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	bottom: 0px;	
+}
+.itm-skew-horizontal:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;	
+}
+.itm-skew-top:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;	
+}
+.itm-skew-bottom:after
+{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;	
+}
+.itm-skew-right:after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: -5px;
+	width: 10px;
+	height: 100%;
+}
+.itm-skew-left:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: -5px;
+	width: 10px;
+	height: 100%;
+}
+/*********************	SKEW DEGRADE AVAILABLE	*********************/
+/*********************  		X AXIS			*********************/
+.itm-skew-top.itm-skew:before,
+.itm-skew-top.itm-skew:after,
+.itm-skew-bottom.itm-skew:before,
+.itm-skew-bottom.itm-skew:after,
+.itm-skew-horizontal.itm-skew:before,
+.itm-skew-horizontal.itm-skew:after {
+	-ms-transform: skewY(-45deg);
+	-webkit-transform: skewY(-45deg);
+	transform: skewY(-45deg);
+}
+.itm-skew-top.itm-skew-15:before,
+.itm-skew-top.itm-skew-15:after,
+.itm-skew-bottom.itm-skew-15:before,
+.itm-skew-bottom.itm-skew-15:after,
+.itm-skew-horizontal.itm-skew-15:before,
+.itm-skew-horizontal.itm-skew-15:after {
+	-ms-transform: skewY(-15deg);
+	-webkit-transform: skewY(-15deg);
+	transform: skewY(-15deg);
+}
+.itm-skew-top.itm-skew-30:before,
+.itm-skew-top.itm-skew-30:after,
+.itm-skew-bottom.itm-skew-30:before,
+.itm-skew-bottom.itm-skew-30:after,
+.itm-skew-horizontal.itm-skew-30:before,
+.itm-skew-horizontal.itm-skew-30:after {
+	-ms-transform: skewY(-30deg);
+	-webkit-transform: skewY(-30deg);
+	transform: skewY(-30deg);
+}
+.itm-skew-top.itm-skew-60:before,
+.itm-skew-top.itm-skew-60:after,
+.itm-skew-bottom.itm-skew-60:before,
+.itm-skew-bottom.itm-skew-60:after,
+.itm-skew-horizontal.itm-skew-60:before,
+.itm-skew-horizontal.itm-skew-60:after {
+	-ms-transform: skewY(-60deg);
+	-webkit-transform: skewY(-60deg);
+	transform: skewY(-60deg);
+}
+.itm-skew-top.itm-skew-75:before,
+.itm-skew-top.itm-skew-75:after,
+.itm-skew-bottom.itm-skew-75:before,
+.itm-skew-bottom.itm-skew-75:after,
+.itm-skew-horizontal.itm-skew-75:before,
+.itm-skew-horizontal.itm-skew-75:after {
+	-ms-transform: skewY(-75deg);
+	-webkit-transform: skewY(-75deg);
+	transform: skewY(-75deg);
+}
+/*********************  		Y AXIS			*********************/
+.itm-skew-left.itm-skew:before,
+.itm-skew-left.itm-skew:after,
+.itm-skew-right.itm-skew:before,
+.itm-skew-right.itm-skew:after,
+.itm-skew-vertical.itm-skew:before,
+.itm-skew-vertical.itm-skew:after {
+	-ms-transform: skewX(-45deg);
+	-webkit-transform: skewX(-45deg);
+	transform: skewX(-45deg);
+}
+.itm-skew-left.itm-skew-15:before,
+.itm-skew-left.itm-skew-15:after,
+.itm-skew-right.itm-skew-15:before,
+.itm-skew-right.itm-skew-15:after,
+.itm-skew-vertical.itm-skew-15:before,
+.itm-skew-vertical.itm-skew-15:after {
+	-ms-transform: skewX(-15deg);
+	-webkit-transform: skewX(-15deg);
+	transform: skewX(-15deg);
+}
+.itm-skew-left.itm-skew-30:before,
+.itm-skew-left.itm-skew-30:after,
+.itm-skew-right.itm-skew-30:before,
+.itm-skew-right.itm-skew-30:after,
+.itm-skew-vertical.itm-skew-30:before,
+.itm-skew-vertical.itm-skew-30:after {
+	-ms-transform: skewX(-30deg);
+	-webkit-transform: skewX(-30deg);
+	transform: skewX(-30deg);
+}
+.itm-skew-left.itm-skew-60:before,
+.itm-skew-left.itm-skew-60:after,
+.itm-skew-right.itm-skew-60:before,
+.itm-skew-right.itm-skew-60:after,
+.itm-skew-vertical.itm-skew-60:before,
+.itm-skew-vertical.itm-skew-60:after {
+	-ms-transform: skewX(-60deg);
+	-webkit-transform: skewX(-60deg);
+	transform: skewX(-60deg);
+}
+.itm-skew-left.itm-skew-75:before,
+.itm-skew-left.itm-skew-75:after,
+.itm-skew-right.itm-skew-75:before,
+.itm-skew-right.itm-skew-75:after,
+.itm-skew-vertical.itm-skew-75:before,
+.itm-skew-vertical.itm-skew-75:after {
+	-ms-transform: skewX(-75deg);
+	-webkit-transform: skewX(-75deg);
+	transform: skewX(-75deg);
+}
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
