@@ -184,5 +184,17 @@ Web:		http://www.itmaniax.com
 	transform: skewX(-75deg);
 }
 /******************************************************************************/
+/***********   ALERT   ********************************************************/
 /******************************************************************************/
+.itm-alert-icon {
+    display: table-cell;
+    padding-right: 15px;
+    vertical-align: middle;
+}
+.itm-alert-text {
+    display: table-cell;
+    padding-left: 15px;
+    vertical-align: middle;
+    border-left: solid 1px;
+}
 /******************************************************************************/
